@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>نسيت كلمة المرور</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="left-panel">
+
+    <div class="logo">
+      <img src="./images/flag-egypt-23rd-july-vector-600nw-1832638591-removebg-preview.png" width="60"/>
+      <div>
+        <h2>نظام الكارت الطبي الذكي</h2>
+        <p>صحة المواطن.. مسئوليتنا جميعاً</p>
+      </div>
+    </div>
+
+    <h1>إعادة تعيين كلمة المرور</h1>
+
+    <p class="subtitle">
+      لا تقلق، سنساعدك في استعادة الوصول إلى حسابك بخطوات بسيطة وآمنة
+    </p>
+
+    <div class="features">
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div class="feature-text">
+          <strong>أمن وسري</strong>
+          <p>نضمن حماية بياناتك ومعلوماتك الشخصية بأعلى معايير الأمان.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="feature-text">
+          <strong>خطوات سهلة</strong>
+          <p>عملية إعادة تعيين كلمة المرور سريعة وبسيطة</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="feature-text">
+          <strong>حسابك محمي</strong>
+          <p>نستخدم تقنيات متقدمة لحماية حسابك من الوصول غير المصرح.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- صورة السكاي لاين -->
+    <div class="skyline-wrapper">
+      <img src="./images/skyline2.png" alt="skyline" class="skyline-image" />
+    </div>
+
+  </div>
+
+  <div class="right-panel">
+
+    <div class="lock-icon-wrapper">
+      <i class="fa-solid fa-lock"></i>
+    </div>
+
+    <h2 class="form-title">نسيت كلمة المرور؟</h2>
+
+    <p class="form-subtitle">
+      أدخل البريد الإلكتروني أو رقم الهاتف المرتبط بحسابك
+      وسنرسل لك رمز التحقق لإعادة تعيين كلمة المرور
+    </p>
+
+    <div class="steps-bar">
+      <div class="step-item active">
+        <div class="step-number">1</div>
+        <span class="step-label">إدخال البيانات</span>
+      </div>
+
+      <div class="step-connector"></div>
+
+      <div class="step-item">
+        <div class="step-number">2</div>
+        <span class="step-label">التحقق</span>
+      </div>
+
+      <div class="step-connector"></div>
+
+      <div class="step-item">
+        <div class="step-number">3</div>
+        <span class="step-label">إعادة تعيين</span>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label">البريد الإلكتروني أو رقم الهاتف</label>
+      <div class="field-input-wrapper">
+        <span class="field-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <input class="field-input" type="text" id="emailInput" placeholder="أدخل بريدك الإلكتروني أو رقم هاتفك" />
+      </div>
+      <small class="field-hint">أدخل البريد الإلكتروني أو رقم الهاتف الذي استخدمته عند إنشاء الحساب</small>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label">نوع الحساب <span class="optional-tag">(اختياري)</span></label>
+      <select class="field-select" id="accountType">
+        <option value="">اختر نوع الحساب</option>
+        <option value="citizen">مواطن</option>
+        <option value="doctor">طبيب</option>
+        <option value="hospital">مستشفى</option>
+        <option value="pharmacy">صيدلية</option>
+      </select>
+    </div>
+
+    <button class="submit-btn" onclick="sendCode()">
+      <i class="fa-solid fa-paper-plane"></i>
+      إرسال رمز التحقق
+    </button>
+
+    <div class="notice-box">
+      <span class="notice-icon">
+        <i class="fa-solid fa-circle-info"></i>
+      </span>
+      <div class="notice-text">
+        <p>ستصلك رسالة تحتوي على رمز التحقق لإعادة تعيين كلمة المرور</p>
+        <small>قد تستغرق الرسالة بضع دقائق لتصل إليك</small>
+      </div>
+    </div>
+
+    <div class="bottom-links">
+      <a href="#">تذكرت كلمة المرور؟</a>
+      <a href="#">← العودة إلى تسجيل الدخول</a>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- footer -->
+<div class="footer-bar">
+
+  <div class="footer-bar-item">
+    <i class="fa-solid fa-lock"></i>
+    <span><strong>خصوصية تامة</strong> — نحترم خصوصيتك ولا نشارك بياناتك</span>
+  </div>
+
+  <div class="footer-bar-item">
+    <i class="fa-solid fa-headset"></i>
+    <span><strong>مساعدة فنية</strong> — تحتاج مساعدة؟ اتصل بنا على 15344</span>
+  </div>
+
+  <div class="footer-bar-item">
+    <i class="fa-solid fa-shield-halved"></i>
+    <span><strong>حماية وأمان</strong> — بياناتك محمية بأعلى معايير للأمان</span>
+  </div>
+
+</div>
+
+<script src="./java/script.js"></script>
+</body>
+</html>
